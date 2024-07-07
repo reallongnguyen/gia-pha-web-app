@@ -2,32 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-back-ground text-gray-950
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.yoopta-heading-one {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  line-height: 1.75rem !important;
+  margin-top: 1rem !important;
+}
+
+.yoopta-heading-two {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  line-height: 1.5rem !important;
+  margin-top: 0.75rem !important;
+}
+
+.yoopta-heading-three {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -.025em !important;
+  line-height: 1.25rem !important;
+  margin-bottom: .25rem !important;
+  margin-top: .5rem !important;
+  scroll-margin: 5rem !important;
 }
