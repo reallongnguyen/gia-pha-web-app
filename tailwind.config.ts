@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         'back-ground': '#f1f1f1',
         'back-ground-light': '#fff',
+        brand: '#06C755',
       },
     },
   },
